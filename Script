@@ -1,0 +1,18 @@
+Private Sub CommandButton1_Click()
+Dim X As Long
+'Make the shape’s text a random number
+'X or less
+'Change 12 below to any number you’d like:
+X = 100
+ 
+TextBox1.Text = CStr(Random(X))
+ 
+ 
+End Sub
+ 
+Function Random(High As Long) As Long
+'Generates a random number less than or equal to
+'the value passed in High
+Randomize
+Random = Int((High * Rnd) + 1)
+End Function
